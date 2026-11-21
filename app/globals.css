@@ -37,6 +37,12 @@ button:disabled { opacity: .4; }
   position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 12px; overflow: hidden;
   background: #000; margin-bottom: 12px;
 }
+.player.hidden { display: none; }
+.recent { display: grid; gap: 8px; margin-top: 10px; }
+.recent-item { display: flex; align-items: center; gap: 10px; text-align: left; padding: 10px 12px; min-width: 0; }
+.recent-item.on { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent) inset; }
+.recent-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.stream-host { margin-top: 4px; font-weight: 600; overflow-wrap: anywhere; }
 .player > *, .player iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px; margin: 12px 0; }
 .label { color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
